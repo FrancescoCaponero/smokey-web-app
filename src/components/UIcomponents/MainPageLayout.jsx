@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainPageLayout = ({children}) => {
+const MainPageLayout = ({children, flexcol}) => {
   return (
     <div className='  
     min-w-screen
@@ -13,15 +13,16 @@ const MainPageLayout = ({children}) => {
     md:pt-[8rem]
     pt-[4rem]
     '>
-        <main className=' 
+        <main className={`
         w-[1200px] 
         flex 
         md:flex-row
         flex-col
         justify-between 
         items-center
-        px-[2rem]
-        xl:px-0'>
+        px-[1rem]
+        ${flexcol}
+        xl:px-0`}>
         {children}
         </main>
     </div>

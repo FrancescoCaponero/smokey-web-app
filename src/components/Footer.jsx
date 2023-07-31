@@ -23,7 +23,7 @@ const Footer = () => {
       w-[1200px]
       px-[2rem]
       gap-[5rem]'>
-        <h1 className='uppercase self-start text-4xl mt-20 font-bold'>About Us</h1>
+        <h1 className='uppercase self-start text-4xl mt-[10rem] font-bold'>About Us</h1>
         <div className='text-plate-greyish self-start flex flex-col text-md gap-4 font-medium'>
           <Link 
               to="/contacts" 

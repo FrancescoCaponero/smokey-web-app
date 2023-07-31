@@ -1,8 +1,7 @@
-# Smokey Hamburger App
+# Smokey
 
-This is the Smokey Hamburger App, a delightful web application built using React, Vite, React Router, and Tailwind CSS. The app allows users to explore a variety of mouthwatering hamburger recipes, each with its unique smoky twist.
+This is the Smokey  App, a delightful web application built using React, Vite, React Router, and Tailwind CSS. The app allows users to explore a variety of mouthwatering hamburger recipes, each with its unique smoky twist.
 
-![Smokey Hamburger App Screenshot](screenshot.png)
 
 ## Features
 
@@ -20,13 +19,13 @@ Check out the live demo of the app [here](https://example.com).
 1. Clone this repository to your local machine using:
 
    ```
-   git clone https://github.com/your-username/smokey-hamburger-app.git
+   git clone https://github.com/FrancescoCaponero/smokey-web-app
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd smokey-hamburger-app
+   cd smokey-web-app
    ```
 
 3. Install the project dependencies:
@@ -54,22 +53,6 @@ Check out the live demo of the app [here](https://example.com).
 - React Router: A routing library for React applications.
 - Tailwind CSS: A utility-first CSS framework for rapid UI development.
 
-## Project Structure
-
-```
-smokey-hamburger-app/
-├── public/             # Public assets and index.html
-├── src/                # Application source code
-│   ├── components/     # Reusable components
-│   ├── data/           # Recipe data and other static data
-│   ├── pages/          # Individual page components
-│   ├── App.js          # Main application component
-│   ├── index.js        # Entry point of the application
-├── .gitignore          # List of files and folders to ignore in version control
-├── package.json        # Project dependencies and scripts
-├── README.md           # Project README (you are here!)
-├── vite.config.js      # Vite configuration file
-```
 
 ## Contributing
 

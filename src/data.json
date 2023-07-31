@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Classic Stampede",
+      "img": "src/assets/burger1.png",
+      "summary": "An All-American Favorite with Juicy Beef, Crisp Veggies, and Signature Sauce.",
+      "description": "The Classic Stampede, an American culinary legend, satisfies cravings with every bite.A succulent beef patty, expertly seasoned and charred on the grill, is crowned with gooey cheddar cheese, crisp lettuce, ripe tomato slices, and zesty pickles.All harmoniously hugged by a toasted sesame bun, creating a timeless symphony of flavors that delight taste buds with nostalgia.",
+      "price": 59.99
+    },
+    {
+      "id": 2,
+      "name": "Cowboy's Delight",
+      "img": "src/assets/burger2.png",
+      "summary": "Saddle Up for Flavor! Tender Beef, Sizzling Bacon, and Savory BBQ Sauce.",
+      "description": "Satisfying burger that takes your taste buds on a wild ride. Picture tender beef cooked to perfection, complemented by sizzling bacon that adds a smoky and savory touch. The star of this delicious creation is the rich and tangy BBQ sauce, bringing a burst of flavors reminiscent of open campfires under the starry night sky.",
+      "price": 49.99
+    },
+    {
+      "id": 3,
+      "name": "Rancher's Pride",
+      "img": "src/assets/burger3.png",
+      "summary": "A Taste of the Wild West! Mouthwatering Beef, Creamy Avocado, and Zesty Pepper Jack.",
+      "description": "Sink your teeth into the succulent and juicy beef, handpicked for its exceptional taste and tenderness. To add a touch of freshness and creaminess, we've included slices of ripe avocado that perfectly complement the beef's richness. Completing this delicious masterpiece is the zesty Pepper Jack cheese, adding a subtle kick to the overall experience. ",
+      "price": 39.99
+    }
+  ]
+  

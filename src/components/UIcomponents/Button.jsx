@@ -16,6 +16,7 @@ const Button = ({text}) => {
     flex 
     justify-center 
     items-center
+    cursor-pointer
     my-[4rem]
     md:my-0'>
       {text}

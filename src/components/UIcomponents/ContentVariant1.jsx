@@ -23,7 +23,7 @@ const ContentVariant1 = () => {
         overflow-hidden
         h-[50rem]
         '>
-          <img src={mainBurger}  className="object-none object-top h-[200rem] "/>
+          <img src={mainBurger} className="hover:scale-105 transition-all object-cover object-center w-full h-full "/>
         </div>
     </MainPageLayout>
   )
