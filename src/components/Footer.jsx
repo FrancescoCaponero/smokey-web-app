@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+
 const Footer = () => {
   return (
     <div className='
@@ -12,8 +17,7 @@ const Footer = () => {
     justify-center
     items-center
     flex
-    relative
-    z-0'>
+    -z-50'>
       <div className='bg-plate-greyish h-[.25rem] w-full absolute top-[-.5rem]'></div>
       <div className='
       flex
@@ -22,11 +26,13 @@ const Footer = () => {
       items-center
       w-[1200px]
       px-[2rem]
+      -z-100
       gap-[5rem]'>
         <h1 className='uppercase self-start text-4xl mt-[10rem] font-bold'>About Us</h1>
         <div className='text-plate-greyish self-start flex flex-col text-md gap-4 font-medium'>
           <Link 
               to="/contacts" 
+              onClick={scrollToTop}
               className='
               hover:underline 
               transition-all
@@ -37,6 +43,7 @@ const Footer = () => {
           </Link>
           <Link 
             to="/barbeques" 
+            onClick={scrollToTop}
             className='
             hover:underline 
             transition-all
@@ -47,6 +54,7 @@ const Footer = () => {
           </Link>
           <Link 
             to="/about-us" 
+            onClick={scrollToTop}
             className='
             hover:underline 
             transition-all

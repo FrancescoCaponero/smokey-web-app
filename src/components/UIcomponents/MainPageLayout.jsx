@@ -12,6 +12,7 @@ const MainPageLayout = ({children, flexcol}) => {
     z-0
     md:pt-[8rem]
     pt-[4rem]
+    relative
     '>
         <main className={`
         w-[1200px] 

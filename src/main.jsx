@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -8,11 +8,12 @@ import Contacts from './pages/Contacts';
 import Login from './pages/Auth/Login';
 import SignIn from './pages/Auth/SignIn';
 import Products from './pages/Products';
+import SingleProduct from './pages/SingleProduct';
+import ErrorPage from './pages/ErrorPage';
+
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import './index.css'
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/about-us",
@@ -30,20 +32,24 @@ const router = createBrowserRouter([
     element: <Barbeques />,
   },
   {
-    path: "/Contacts",
+    path: "/contacts",
     element: <Contacts />,
   },
   {
-    path: "/Products",
+    path: "/products",
     element: <Products />,
   },
   {
+    path: "/products/:id",
+    element: <SingleProduct />,
+  },
+  {
     path: "/cart",
-    element: <Cart />
+    element: <Cart />,
   },
   {
     path: "/log",
-    element: <Login />
+    element: <Login />,
   },
   {
     path: "/sign-in",
@@ -51,9 +57,10 @@ const router = createBrowserRouter([
   },
 ]);
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
+  <React.StrictMode>  
+      <RouterProvider router={router}/>
   </React.StrictMode>
 
 )

@@ -52,6 +52,7 @@ Check out the live demo of the app [here](https://example.com).
 - Vite: A fast and modern build tool for web development.
 - React Router: A routing library for React applications.
 - Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- Redux: A predictable state container for JavaScript apps.
 
 
 ## Contributing

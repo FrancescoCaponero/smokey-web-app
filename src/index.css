@@ -34,7 +34,7 @@
   background: #555;
 }
 
-@variants hover, focus {
+@layer utilities {
   .link-style {
     @apply 
     hover:underline 
@@ -52,5 +52,22 @@
     decoration-darkgrey
     underline-offset-2
   }
+
+  .link-style-contact-input{
+    @apply
+    w-full 
+    p-2 
+    border 
+    bg-transparent 
+    border-plate-white 
+    placeholder:text-plate-greyish 
+    placeholder:font-light 
+    focus:outline-none 
+  }
   
 }
+
+.link-active {
+  text-decoration: underline;
+}
+

@@ -4,6 +4,8 @@ import ContentVariant1 from "../components/UIcomponents/ContentVariant1"
 import ContentVariant2 from "../components/UIcomponents/ContentVariant2"
 import Excerpt from "../components/Excerpt"
 
+
+
 function Home() {
 
   return (
