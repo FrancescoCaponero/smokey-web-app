@@ -36,6 +36,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="link-style-contact-input my-2"
+                autoComplete="username"
                 required
                 />
             </div>
@@ -49,6 +50,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="link-style-contact-input"
                 required
+                autoComplete="current-password"
                 />
             </div>
             <Link className='mb-[5rem]'>

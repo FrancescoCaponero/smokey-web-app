@@ -17,7 +17,7 @@ const handleMobileMenuToggle = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const itemsCounter = JSON.parse(localStorage.getItem('cart')).length;
+  const itemsCounter = JSON.parse(localStorage.getItem('cart'))?.length || 0;
   
   return (
     <>

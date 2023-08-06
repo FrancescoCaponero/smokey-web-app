@@ -2,6 +2,7 @@ import React from 'react'
 import hamXIcon from '../../assets/ham-x-icon.svg'
 import ViewCartBtn from '../../components/UIcomponents/ViewCartBtn'
 import CheckOutBtn from '../../components/UIcomponents/CheckOutBtn'
+import { Link } from 'react-router-dom'
 
 const PopProducts = ({isCartOpen, miniCartData, setIsCartOpen, removeFromCart}) => {
   return (
@@ -43,8 +44,8 @@ const PopProducts = ({isCartOpen, miniCartData, setIsCartOpen, removeFromCart}) 
                       <div>
                         <h1 className='md:text-md text-darkgrey md:text-lg my-[.5rem] md:my-0'>{miniProduct.name}</h1>
                       </div>
-                      <div className='md:w-[3rem] w-[5rem] ml-4 overflow-hidden'>
-                        <img src={miniProduct.img} className='object-cover' alt={miniProduct.name} />
+                      <div className='md:w-[3rem] w-[5rem] h-[3rem] ml-4 overflow-hidden'>
+                        <img src={miniProduct.img} className='object-cover object-right aspect-video' alt={miniProduct.name} />
                       </div>
                       <div onClick={() => removeFromCart(index)} className='cursor-pointer text-darkgrey ml-4 font-bold'>x</div>
                     </div>
@@ -56,7 +57,9 @@ const PopProducts = ({isCartOpen, miniCartData, setIsCartOpen, removeFromCart}) 
                   )}
                 </div>
               )}
-              <ViewCartBtn text='View my cart' numberOfItems={miniCartData.length} width='w-[calc(100%-2rem)] md:w-[calc(100%-2rem)]' />
+              <Link to="/cart" className="w-[calc(100%)] md:w-[calc(100%)] ml-[2rem]">
+                <ViewCartBtn text='View my cart' numberOfItems={miniCartData.length} width='w-[calc(100%-2rem)] md:w-[calc(100%-2rem)]' />
+              </Link>
               <CheckOutBtn width='w-[calc(100%-2rem)] md:w-[calc(100%-2rem)]' text='Check Out' />
             </div>
           </div>

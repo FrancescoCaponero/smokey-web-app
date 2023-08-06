@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -59,7 +59,7 @@ const SingleProduct = () => {
         <div className='flex flex-col w-full relative'>
           <div className='md:flex md:gap-[4rem] mb-[12rem]'>
             <div className='overflow-hidden h-[30rem] md:w-[40rem] md:h-[40rem]'>
-              <img src={`${product?.img}`} className='w-full h-full object-cover object-center hover:scale-105 transition-all'/>
+              <img src={`${product?.img}`} className='w-full h-full object-cover aspect-video object-center hover:scale-105 transition-all'/>
             </div>
             <div className='md:flex flex-col justify-center '>
               <h1 className='md:text-3xl text-plate-white md:mb-[1rem] text-3xl my-[1rem] md:my-0'>{product.name}</h1>

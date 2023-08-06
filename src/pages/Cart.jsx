@@ -9,7 +9,7 @@ const Cart = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const cartItems = JSON.parse(localStorage.getItem('cart'));
+  const cartItems = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
   const groupedCartItems = cartItems.reduce((groups, item) => {
     if (!groups[item.id]) {
