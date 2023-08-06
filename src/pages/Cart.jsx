@@ -45,7 +45,7 @@ const Cart = () => {
             const items = groupedCartItems[itemId];
             return (
               <div className="flex justify-between w-full text-plate-greyish" key={index}>
-                <div className="p-4 text-[1rem] text-plate-white w-[50%] uppercase">{items[0].name}</div>
+                <div className="p-4 text-[1rem] text-plate-white w-[50%] uppercase ">{items[0].name}</div>
                 <div className="p-4 text-[1rem] md:block hidden text-plate-white uppercase">{items.length}</div>
                 <div className="p-4 text-[1rem] text-plate-white uppercase">
                   € {calculateTotal(items)}
