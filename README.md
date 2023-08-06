@@ -3,7 +3,7 @@
 This is the Smokey  App, a delightful web application built using React, Vite, React Router, and Tailwind CSS. The app allows users to explore a variety of mouthwatering hamburger recipes, each with its unique smoky twist.
 
 ## Website Demo
-# https://64cf685f842a6d35fd97c3c5--majestic-chebakia-d6208d.netlify.app/products/2
+# https://64cf685f842a6d35fd97c3c5--majestic-chebakia-d6208d.netlify.app/
 
 ## Features
 
