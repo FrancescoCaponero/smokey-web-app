@@ -5,6 +5,7 @@ import CheckOutBtn from '../../components/UIcomponents/CheckOutBtn'
 import { Link } from 'react-router-dom'
 
 const PopProducts = ({isCartOpen, miniCartData, setIsCartOpen, removeFromCart}) => {
+
   return (
     <>
      <div className={`

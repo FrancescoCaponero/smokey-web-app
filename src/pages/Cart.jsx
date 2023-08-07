@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import MainPageLayout from '../components/UIcomponents/MainPageLayout';
 import { Link } from 'react-router-dom';
+import CheckOutBtn from '../components/UIcomponents/CheckOutBtn';
 
 const Cart = () => {
   const scrollToTop = () => {
@@ -48,7 +49,7 @@ const Cart = () => {
                 <div className="p-4 text-[1rem] text-plate-white w-[50%] uppercase ">{items[0].name}</div>
                 <div className="p-4 text-[1rem] md:block hidden text-plate-white uppercase">{items.length}</div>
                 <div className="p-4 text-[1rem] text-plate-white uppercase">
-                  € {calculateTotal(items)}
+                  € {calculateTotal(items).toFixed(2)}
                 </div>
               </div>
             );
@@ -64,8 +65,12 @@ const Cart = () => {
                 € {Object.values(groupedCartItems).reduce(
                   (total, items) => total + calculateTotal(items),
                   0
-                )}
+                ).toFixed(2)}
               </span>
+            </div>
+            <div className="p-4 text-[2rem] flex justify-between text-plate-white uppercase mt-[4rem]">
+              <span className='w-1'></span>
+              <CheckOutBtn width='self-end' text='Check Out' />
             </div>
           </div>
         </div>

@@ -1,6 +1,9 @@
 import React from 'react';
 
-const ViewCartBtn = ({ text, width, onClick, numberOfItems }) => {
+const ViewCartBtn = ({ text, width,  numberOfItems }) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Use smooth scrolling
+  };
   return (
     <button
       className={`
@@ -25,7 +28,7 @@ const ViewCartBtn = ({ text, width, onClick, numberOfItems }) => {
         my-[.8rem]
         mt-[2rem]
         md:my-2`}
-      onClick={onClick}
+        onClick={scrollToTop} 
     >
       {text} ({numberOfItems})
     </button>
